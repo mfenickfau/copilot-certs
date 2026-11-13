@@ -13,7 +13,8 @@ import { ab100Concepts } from './ab-100/_ab100';
 import { ai200Concepts } from './ai-200/_ai200';
 import { ai300Concepts } from './ai-300/_ai300';
 import { ai500Concepts } from './ai-500/_ai500';
+import { ai103Concepts } from './ai-103/_ai103';
 /**
  * Registry of every concept. Content groups are added here as they land.
  */
-export const allConcepts: Concept[] = [...ab730Concepts, ...ai901Concepts, ...ab731Concepts, ...ab620Concepts, ...gh700Concepts, ...ab900Concepts, ...gh300Concepts, ...gh600Concepts, ...ab650Concepts, ...ab100Concepts, ...ai200Concepts, ...ai300Concepts, ...ai500Concepts];
+export const allConcepts: Concept[] = [...ab730Concepts, ...ai901Concepts, ...ab731Concepts, ...ab620Concepts, ...gh700Concepts, ...ab900Concepts, ...gh300Concepts, ...gh600Concepts, ...ab650Concepts, ...ab100Concepts, ...ai200Concepts, ...ai300Concepts, ...ai500Concepts, ...ai103Concepts];
