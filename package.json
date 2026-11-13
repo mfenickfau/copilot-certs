@@ -24,6 +24,7 @@
     "oxlint": "^1.90.0",
     "tsx": "^4.23.15",
     "typescript": "~7.0.2",
+    "undici": "^8.12.4",
     "vite": "^8.3.6"
   },
   "description": "Open-source study platform for Microsoft AI and Copilot certifications, built around the official learning outcomes",

@@ -1,7 +1,10 @@
 /**
  * Checks every resource URL in the content with a HEAD/GET request.
  * Run with `npx tsx scripts/check-links.ts`. Network required; not part of CI.
+ * Honors HTTPS_PROXY via undici's EnvHttpProxyAgent when set.
  */
+import { EnvHttpProxyAgent, setGlobalDispatcher } from 'undici';
+if (process.env.HTTPS_PROXY || process.env.https_proxy) setGlobalDispatcher(new EnvHttpProxyAgent());
 import { allConcepts } from '../src/content/concepts';
 
 const urls = new Map<string, string[]>();
